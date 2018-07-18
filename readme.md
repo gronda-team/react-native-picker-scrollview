@@ -2,6 +2,12 @@
 
 a pure js picker, each option item customizable
 
+/*******
+
+needed a fork, because despite the component is a clever solution, it was not really maintained anymore, and had some conflicts with the new react version. also it is nice to customize it a bit on our own, so we can have a nice solution.
+
+*******/
+
 ![example](./res/demo.gif)
 
 
