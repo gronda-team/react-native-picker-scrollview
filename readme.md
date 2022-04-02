@@ -14,12 +14,12 @@ needed a fork, because despite the component is a clever solution, it was not re
 ### usage
 
 ```shell
-npm install react-native-picker-scrollview --save
+npm install @gronda-team/react-native-picker-scrollview --save
 ```
 
 ```jsx
 import React, {Component} from 'react';
-import ScrollPicker from 'react-native-picker-scrollview';
+import ScrollPicker from '@gronda-team/react-native-picker-scrollview';
 
 export default class SimpleExample extends Component {
 

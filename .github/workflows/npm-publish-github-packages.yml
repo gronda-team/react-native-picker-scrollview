@@ -10,7 +10,11 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 14
+          registry-url: https://npm.pkg.github.com/
+          scope: "@gronda-team"
       - run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.PACKAGE_WRITER_GITHUB_TOKEN}}
       - run: npm test
   publish-gpr:
     needs: build
@@ -26,6 +30,8 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: "@gronda-team"
       - run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.PACKAGE_WRITER_GITHUB_TOKEN}}
       - run: npm --no-git-tag-version version $RELEASE_TAG_NAME
         env:
           RELEASE_TAG_NAME: ${{ github.event.release.tag_name }}
