@@ -1,14 +1,13 @@
 {
-  "name": "react-native-picker-scrollview",
+  "name": "@gronda-team/react-native-picker-scrollview",
   "version": "0.1.0",
   "description": "a pure js picker, each option item customizable",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 0"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/veizz/react-native-picker-scrollview.git"
+    "url": "https://github.com/gronda-team/react-native-picker-scrollview.git"
   },
   "keywords": [
     "picker",
@@ -18,7 +17,10 @@
   "author": "veizz",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/veizz/react-native-picker-scrollview/issues"
+    "url": "https://github.com/gronda-team/react-native-picker-scrollview/issues"
   },
-  "homepage": "https://github.com/veizz/react-native-picker-scrollview#readme"
+  "homepage": "https://github.com/gronda-team/react-native-picker-scrollview#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
 }
