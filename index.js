@@ -7,8 +7,7 @@ import ReactNative, {
     View,
     ScrollView,
     Dimensions,
-    Platform,
-    ViewPropTypes
+    Platform
 } from 'react-native';
 import PropTypes from 'prop-types';
 
@@ -18,7 +17,7 @@ const deviceHeight = Dimensions.get('window').height;
 export default class ScrollPicker extends Component {
 
     static propTypes = {
-        style:ViewPropTypes.style,
+        style:PropTypes.object,
         dataSource:PropTypes.array.isRequired,
         selectedIndex:PropTypes.number,
         onValueChange:PropTypes.func,
